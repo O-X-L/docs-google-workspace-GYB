@@ -1,0 +1,8 @@
+.idea/
+.vscode/
+.venv/
+
+build/
+gam.zip
+GAM-*
+source/*/**.md
