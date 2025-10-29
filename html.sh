@@ -63,9 +63,10 @@ do
   sed -i "s|^#\s|## |g" "$file"
   sed -i "s|^#$h1|$h1|g" "$file"
 
-  file_rel="$(echo "$file" | sed "s|${SRC_DIR}/source/||g" | sed 's|.md||g' | sed 's|/|\/|g')"
-  echo "  <url><loc>https://${DOMAIN}/${file_rel}.html</loc></url>" >> "$FILE_SM"
+  path_rel="$(echo "$file" | sed "s|${SRC_DIR}/source/||g" | sed 's|.md||g' | sed 's|/|\/|g')"
+  echo "  <url><loc>https://${DOMAIN}/${path_rel}.html</loc></url>" >> "$FILE_SM"
 
+  file_rel="$(echo "$path_rel" | rev | cut -d '/' -f -1 | rev)"
   echo '' >> "$file"
   echo '----' >> "$file"
   echo '' >> "$file"
