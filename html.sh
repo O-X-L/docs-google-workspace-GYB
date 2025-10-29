@@ -41,7 +41,7 @@ fi
 log 'DOWNLOADING UPSTREAM DOCS'
 cd "$TMP_DIR"
 rm -f "${SRC_DIR}/source/usage/"*.md "${SRC_DIR}/source/intro/"*.md
-git clone --depth 1 'https://github.com/GAM-team/got-your-back.wiki.git'
+git clone --depth 1 'https://github.com/GAM-team/got-your-back.wiki.git' >/dev/null
 cp got-your-back.wiki/*.md "${SRC_DIR}/source/usage/"
 
 mv "${SRC_DIR}/source/usage/Home.md" "${SRC_DIR}/source/intro/"

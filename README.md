@@ -13,6 +13,13 @@ This is a mirror of the [official Got-Your-Back documentation](https://github.co
 Run:
 
 ```
+apt install git python3-pip
+
+# with VENV
+apt install python3-virtualenv 
+bash venv.sh
+
+# WITHOUT
 pip install -r requirements.txt
 
 # USAGE: bash html.sh <BUILD-DIR> <DOMAIN> 

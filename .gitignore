@@ -3,6 +3,4 @@
 .venv/
 
 build/
-gam.zip
-GAM-*
 source/*/**.md
