@@ -39,6 +39,7 @@ html_theme_options = {
         "search.suggest",
         "toc.follow",
         "toc.sticky",
+        "toc.integrate",
         "content.tabs.link",
         "content.code.copy",
         "content.action.edit",
@@ -80,12 +81,22 @@ html_theme_options = {
             "title": "GAM Documentation",
             "aliases": [],
         },
+        {
+            "version": "https://www.O-X-L.com",
+            "title": "About OXL",
+            "aliases": [],
+        },
     ],
     "social": [
         {
             "icon": "fontawesome/brands/github",
             "link": "https://github.com/O-X-L",
             "name": "OXL on GitHub",
+        },
+        {
+            "icon": "fontawesome/solid/globe",
+            "link": "https://www.O-X-L.com",
+            "name": "OXL Website",
         },
     ],
 }
